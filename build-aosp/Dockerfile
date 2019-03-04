@@ -12,7 +12,8 @@ MAINTAINER Gianpaolo Macario <gmacario@gmail.com>
 
 # See https://github.com/docker/docker/issues/4032
 #ENV DEBIAN_FRONTEND noninteractive
-
+RUN add-apt-repository -y ppa:openjdk-r/ppa \
+  && apt update
 # Make sure the package repository is up to date
 RUN sed -i 's/main$/main universe/' /etc/apt/sources.list
 RUN dpkg --add-architecture i386
