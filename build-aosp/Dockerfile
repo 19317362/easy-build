@@ -12,6 +12,8 @@ MAINTAINER Gianpaolo Macario <gmacario@gmail.com>
 
 # See https://github.com/docker/docker/issues/4032
 #ENV DEBIAN_FRONTEND noninteractive
+
+RUN apt update && apt install -y software-properties-common python-software-properties
 RUN add-apt-repository -y ppa:openjdk-r/ppa \
   && apt update
 # Make sure the package repository is up to date
