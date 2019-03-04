@@ -7,6 +7,21 @@ This project helps rebuilding firmware images of the [Android Open Source Projec
 
 WARNING: Still experimental, use at your own risk!
 
+### Using the image
+
+```
+$ docker push 19317362/aosp1404:v1
+$ docker run -ti --rm -v $PWD:/home/build:rw 19317362/aosp1404:v1
+$ 
+```
+Then logged as build@container:
+
+```
+$ source ./build/envsetup.sh
+$ lunch ...
+$ make -j...
+```
+
 ### Build the Docker image
 
 ```
