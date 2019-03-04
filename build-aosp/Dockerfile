@@ -19,18 +19,18 @@ RUN dpkg --add-architecture i386
 RUN apt-get -qq update && apt-get -qqy dist-upgrade
 
 # Install essential packages
-RUN apt-get -y install curl git mc rsync screen tig
+RUN apt-get -y install curl git mc rsync screen tig vim 
 
 # See https://source.android.com/source/initializing.html
 #
 # The master branch of Android in the Android Open Source Project (AOSP)
 # requires Java 8. On Ubuntu, use OpenJDK.
-# RUN apt-get -y install openjdk-8-jdk
+RUN apt-get -y install openjdk-8-jdk
 #
 # To develop older versions of Android, download and install the corresponding version of the Java JDK:
 #
 # Java 7: for Lollipop through Marshmallow
-RUN apt-get -y install openjdk-7-jdk
+#RUN apt-get -y install openjdk-7-jdk
 #
 # Java 6: for Gingerbread through KitKat
 # Java 5: for Cupcake through Froyo
@@ -68,8 +68,8 @@ RUN apt-get -y install bc lzop u-boot-tools
 #RUN apt-file update
 
 # Add "repo" tool
-RUN curl http://storage.googleapis.com/git-repo-downloads/repo > /usr/local/bin/repo
-RUN chmod a+x /usr/local/bin/repo
+# RUN curl http://storage.googleapis.com/git-repo-downloads/repo > /usr/local/bin/repo
+# RUN chmod a+x /usr/local/bin/repo
 
 # Create user "jenkins"
 RUN id jenkins 2>/dev/null || useradd --uid 1000 --create-home --shell /bin/bash jenkins
