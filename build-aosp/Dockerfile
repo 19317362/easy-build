@@ -23,10 +23,8 @@ RUN sed -i 's/main$/main universe/' /etc/apt/sources.list \
   libgl1-mesa-dev libxml2-utils schedtool xsltproc unzip \
   python-networkx bc lzop u-boot-tools \
   && apt-get clean \
-  && (id build 2>/dev/null || useradd --uid 1000 --create-home --shell /bin/bash build)
+  && useradd noroot -u 1000 -s /bin/bash \
+  && echo "noroot ALL=(ALL) NOPASSWD: ALL" | tee -a /etc/sudoers
 
-USER build
-WORKDIR /home/build
-CMD "/bin/bash"
 
 # EOF
