@@ -14,7 +14,7 @@ RUN sed -i 's/main$/main universe/' /etc/apt/sources.list \
   && apt update \
   && dpkg --add-architecture i386 \
   && apt-get -qq update && apt-get -qqy dist-upgrade \
-  && apt-get -y install curl git mc rsync screen tig vim openjdk-8-jdk \
+  && apt-get -y install curl git mc rsync screen tig genisoimage vim openjdk-8-jdk \
   && update-alternatives --config java \
   && update-alternatives --config javac \
   && apt-get -y install git-core gnupg flex bison gperf build-essential \
