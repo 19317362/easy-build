@@ -23,8 +23,8 @@ RUN sed -i 's/main$/main universe/' /etc/apt/sources.list \
   libgl1-mesa-dev libxml2-utils schedtool xsltproc unzip \
   python-networkx bc lzop u-boot-tools \
   && apt-get clean \
-  && useradd noroot -u 1000 -s /bin/bash \
-  && echo "noroot ALL=(ALL) NOPASSWD: ALL" | tee -a /etc/sudoers
-
+  && id jenkins 2>/dev/null || useradd --uid 1000 --create-home --shell /bin/bash jenkins \
+  && id build 2>/dev/null || useradd --uid 30000 --create-home --shell /bin/bash build \
+  && echo "build ALL=(ALL) NOPASSWD: ALL" | tee -a /etc/sudoers
 
 # EOF
