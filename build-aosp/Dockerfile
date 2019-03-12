@@ -32,6 +32,10 @@ RUN sed -i 's/main$/main universe/' /etc/apt/sources.list \
   && echo "u1002 ALL=(ALL) NOPASSWD: ALL" | tee -a /etc/sudoers \
   && echo "u1003 ALL=(ALL) NOPASSWD: ALL" | tee -a /etc/sudoers
 
-ENV USER='u1000'
+# ENV USER='u1000'
+ENV TZ=Asia/Shanghai
+ENV JAVA_OPTS="-Duser.timezone=Asia/Shanghai -Xms2G -Xmx8G"
+ENV JACK_SERVER_VM_ARGUMENTS="-Xmx8G"
+
 
 # EOF
