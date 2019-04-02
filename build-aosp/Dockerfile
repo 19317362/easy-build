@@ -30,7 +30,24 @@ RUN sed -i 's/main$/main universe/' /etc/apt/sources.list \
   && echo "u1000 ALL=(ALL) NOPASSWD: ALL" | tee -a /etc/sudoers \
   && echo "u1001 ALL=(ALL) NOPASSWD: ALL" | tee -a /etc/sudoers \
   && echo "u1002 ALL=(ALL) NOPASSWD: ALL" | tee -a /etc/sudoers \
-  && echo "u1003 ALL=(ALL) NOPASSWD: ALL" | tee -a /etc/sudoers
+  && echo "u1003 ALL=(ALL) NOPASSWD: ALL" | tee -a /etc/sudoers \
+  && echo "u1004 ALL=(ALL) NOPASSWD: ALL" | tee -a /etc/sudoers \
+  && echo "u1005 ALL=(ALL) NOPASSWD: ALL" | tee -a /etc/sudoers \
+  && echo "u1006 ALL=(ALL) NOPASSWD: ALL" | tee -a /etc/sudoers \
+  && echo "u1007 ALL=(ALL) NOPASSWD: ALL" | tee -a /etc/sudoers \
+  && echo "u1008 ALL=(ALL) NOPASSWD: ALL" | tee -a /etc/sudoers \
+  && echo "u1009 ALL=(ALL) NOPASSWD: ALL" | tee -a /etc/sudoers \
+  && echo "u1010 ALL=(ALL) NOPASSWD: ALL" | tee -a /etc/sudoers \
+  && echo "u1011 ALL=(ALL) NOPASSWD: ALL" | tee -a /etc/sudoers \
+  && echo "u1012 ALL=(ALL) NOPASSWD: ALL" | tee -a /etc/sudoers \
+  && echo "u1013 ALL=(ALL) NOPASSWD: ALL" | tee -a /etc/sudoers \
+  && echo "u1014 ALL=(ALL) NOPASSWD: ALL" | tee -a /etc/sudoers \
+  && echo "u1015 ALL=(ALL) NOPASSWD: ALL" | tee -a /etc/sudoers \
+  && echo "u1016 ALL=(ALL) NOPASSWD: ALL" | tee -a /etc/sudoers \
+  && echo "u1017 ALL=(ALL) NOPASSWD: ALL" | tee -a /etc/sudoers \
+  && echo "u1018 ALL=(ALL) NOPASSWD: ALL" | tee -a /etc/sudoers \
+  && echo "u1019 ALL=(ALL) NOPASSWD: ALL" | tee -a /etc/sudoers \
+  && echo "u1020 ALL=(ALL) NOPASSWD: ALL" | tee -a /etc/sudoers 
 
 # ENV USER='u1000'
 ENV TZ=Asia/Shanghai
