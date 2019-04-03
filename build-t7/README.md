@@ -10,7 +10,7 @@ WARNING: Still experimental, use at your own risk!
 ### Using the image
 
 ```
-$ docker push 19317362/aosp1404:v1
+$ docker push 19317362/t7
 $ docker run -ti --rm -v $PWD:/home/build:rw 19317362/aosp1404:v1
 $ 
 ```
