@@ -27,6 +27,23 @@ RUN sed -i 's/main$/main universe/' /etc/apt/sources.list \
   && useradd --uid 1001 --create-home --shell /bin/bash u1001 \
   && useradd --uid 1002 --create-home --shell /bin/bash u1002 \
   && useradd --uid 1003 --create-home --shell /bin/bash u1003 \
+  && useradd --uid 1004 --create-home --shell /bin/bash u1004 \
+  && useradd --uid 1005 --create-home --shell /bin/bash u1005 \
+  && useradd --uid 1006 --create-home --shell /bin/bash u1005 \
+  && useradd --uid 1007 --create-home --shell /bin/bash u1007 \
+  && useradd --uid 1008 --create-home --shell /bin/bash u1008 \
+  && useradd --uid 1009 --create-home --shell /bin/bash u1009 \
+  && useradd --uid 1010 --create-home --shell /bin/bash u1010 \
+  && useradd --uid 1011 --create-home --shell /bin/bash u1011 \
+  && useradd --uid 1012 --create-home --shell /bin/bash u1012 \
+  && useradd --uid 1013 --create-home --shell /bin/bash u1013 \
+  && useradd --uid 1014 --create-home --shell /bin/bash u1014 \
+  && useradd --uid 1015 --create-home --shell /bin/bash u1015 \
+  && useradd --uid 1016 --create-home --shell /bin/bash u1015 \
+  && useradd --uid 1017 --create-home --shell /bin/bash u1017 \
+  && useradd --uid 1018 --create-home --shell /bin/bash u1018 \
+  && useradd --uid 1019 --create-home --shell /bin/bash u1019 \  
+  && useradd --uid 1020 --create-home --shell /bin/bash u1020 \
   && echo "u1000 ALL=(ALL) NOPASSWD: ALL" | tee -a /etc/sudoers \
   && echo "u1001 ALL=(ALL) NOPASSWD: ALL" | tee -a /etc/sudoers \
   && echo "u1002 ALL=(ALL) NOPASSWD: ALL" | tee -a /etc/sudoers \
