@@ -23,7 +23,7 @@ RUN sed -i 's/main$/main universe/' /etc/apt/sources.list \
   lib32ncurses5-dev x11proto-core-dev libx11-dev lib32z-dev ccache \
   libgl1-mesa-dev libxml2-utils schedtool xsltproc unzip \
   python-networkx bc lzop u-boot-tools tofrodos python-markdown\
-  libgl1-mesa-dev xsltproc texi2html texinfo gawk busybox \
+  libgl1-mesa-dev xsltproc texi2html texinfo gawk busybox u-boot-tools\
   && apt-get clean \
   && useradd --uid 1000 --create-home --shell /bin/bash u1000 \
   && useradd --uid 1001 --create-home --shell /bin/bash u1001 \
