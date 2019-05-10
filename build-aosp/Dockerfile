@@ -44,6 +44,26 @@ RUN sed -i 's/main$/main universe/' /etc/apt/sources.list \
   && useradd --uid 1018 --create-home --shell /bin/bash u1018 \
   && useradd --uid 1019 --create-home --shell /bin/bash u1019 \  
   && useradd --uid 1020 --create-home --shell /bin/bash u1020 \
+  && useradd --uid 1021 --create-home --shell /bin/bash u1021 \
+  && useradd --uid 1022 --create-home --shell /bin/bash u1022 \
+  && useradd --uid 1023 --create-home --shell /bin/bash u1023 \
+  && useradd --uid 1024 --create-home --shell /bin/bash u1024 \
+  && useradd --uid 1025 --create-home --shell /bin/bash u1025 \
+  && useradd --uid 1026 --create-home --shell /bin/bash u1026 \
+  && useradd --uid 1027 --create-home --shell /bin/bash u1027 \
+  && useradd --uid 1028 --create-home --shell /bin/bash u1028 \
+  && useradd --uid 1029 --create-home --shell /bin/bash u1029 \
+  && useradd --uid 1030 --create-home --shell /bin/bash u1030 \
+  && useradd --uid 1031 --create-home --shell /bin/bash u1031 \
+  && useradd --uid 1032 --create-home --shell /bin/bash u1032 \
+  && useradd --uid 1033 --create-home --shell /bin/bash u1033 \
+  && useradd --uid 1034 --create-home --shell /bin/bash u1034 \
+  && useradd --uid 1035 --create-home --shell /bin/bash u1035 \
+  && useradd --uid 1036 --create-home --shell /bin/bash u1036 \
+  && useradd --uid 1037 --create-home --shell /bin/bash u1037 \
+  && useradd --uid 1038 --create-home --shell /bin/bash u1038 \
+  && useradd --uid 1039 --create-home --shell /bin/bash u1039 \  
+  && useradd --uid 1040 --create-home --shell /bin/bash u1040 \  
   && echo "u1000 ALL=(ALL) NOPASSWD: ALL" | tee -a /etc/sudoers \
   && echo "u1001 ALL=(ALL) NOPASSWD: ALL" | tee -a /etc/sudoers \
   && echo "u1002 ALL=(ALL) NOPASSWD: ALL" | tee -a /etc/sudoers \
@@ -64,7 +84,27 @@ RUN sed -i 's/main$/main universe/' /etc/apt/sources.list \
   && echo "u1017 ALL=(ALL) NOPASSWD: ALL" | tee -a /etc/sudoers \
   && echo "u1018 ALL=(ALL) NOPASSWD: ALL" | tee -a /etc/sudoers \
   && echo "u1019 ALL=(ALL) NOPASSWD: ALL" | tee -a /etc/sudoers \
-  && echo "u1020 ALL=(ALL) NOPASSWD: ALL" | tee -a /etc/sudoers 
+  && echo "u1020 ALL=(ALL) NOPASSWD: ALL" | tee -a /etc/sudoers \
+  && echo "u1021 ALL=(ALL) NOPASSWD: ALL" | tee -a /etc/sudoers \
+  && echo "u1022 ALL=(ALL) NOPASSWD: ALL" | tee -a /etc/sudoers \
+  && echo "u1023 ALL=(ALL) NOPASSWD: ALL" | tee -a /etc/sudoers \
+  && echo "u1024 ALL=(ALL) NOPASSWD: ALL" | tee -a /etc/sudoers \
+  && echo "u1025 ALL=(ALL) NOPASSWD: ALL" | tee -a /etc/sudoers \
+  && echo "u1026 ALL=(ALL) NOPASSWD: ALL" | tee -a /etc/sudoers \
+  && echo "u1027 ALL=(ALL) NOPASSWD: ALL" | tee -a /etc/sudoers \
+  && echo "u1028 ALL=(ALL) NOPASSWD: ALL" | tee -a /etc/sudoers \
+  && echo "u1029 ALL=(ALL) NOPASSWD: ALL" | tee -a /etc/sudoers \
+  && echo "u1030 ALL=(ALL) NOPASSWD: ALL" | tee -a /etc/sudoers \
+  && echo "u1031 ALL=(ALL) NOPASSWD: ALL" | tee -a /etc/sudoers \
+  && echo "u1032 ALL=(ALL) NOPASSWD: ALL" | tee -a /etc/sudoers \
+  && echo "u1033 ALL=(ALL) NOPASSWD: ALL" | tee -a /etc/sudoers \
+  && echo "u1034 ALL=(ALL) NOPASSWD: ALL" | tee -a /etc/sudoers \
+  && echo "u1035 ALL=(ALL) NOPASSWD: ALL" | tee -a /etc/sudoers \
+  && echo "u1036 ALL=(ALL) NOPASSWD: ALL" | tee -a /etc/sudoers \
+  && echo "u1037 ALL=(ALL) NOPASSWD: ALL" | tee -a /etc/sudoers \
+  && echo "u1038 ALL=(ALL) NOPASSWD: ALL" | tee -a /etc/sudoers \
+  && echo "u1039 ALL=(ALL) NOPASSWD: ALL" | tee -a /etc/sudoers \
+  && echo "u1040 ALL=(ALL) NOPASSWD: ALL" | tee -a /etc/sudoers 
 
 # ENV USER='u1000'
 ENV TZ=Asia/Shanghai
