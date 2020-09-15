@@ -5,7 +5,7 @@
 #       http://source.android.com/source/index.html
 # ===========================================================================================
 
-FROM ubuntu:14.04
+FROM ubuntu:16.04
 
 RUN sed -i 's/main$/main universe/' /etc/apt/sources.list \
   && apt update \
